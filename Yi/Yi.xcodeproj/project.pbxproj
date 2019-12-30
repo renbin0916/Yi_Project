@@ -18,6 +18,7 @@
 		19EA5A5B23B73AFA00C8DDD9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A5A23B73AFA00C8DDD9 /* String+Extension.swift */; };
 		19EA5A6023B7407600C8DDD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A5E23B7407600C8DDD9 /* HomeViewController.swift */; };
 		19EA5A6123B7407600C8DDD9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EA5A5F23B7407600C8DDD9 /* HomeViewController.xib */; };
+		229B44126917A6D2C701917F /* Pods_Yi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2586C1001627CB7ADB0285A /* Pods_Yi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		19EA5A5A23B73AFA00C8DDD9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		19EA5A5E23B7407600C8DDD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		19EA5A5F23B7407600C8DDD9 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2A3EE128E5559B254CB3535A /* Pods-Yi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yi.release.xcconfig"; path = "Target Support Files/Pods-Yi/Pods-Yi.release.xcconfig"; sourceTree = "<group>"; };
+		B2586C1001627CB7ADB0285A /* Pods_Yi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F466EC24805E2DB83CE03415 /* Pods-Yi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yi.debug.xcconfig"; path = "Target Support Files/Pods-Yi/Pods-Yi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229B44126917A6D2C701917F /* Pods_Yi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,8 @@
 				19EA5A3823B7328C00C8DDD9 /* YiTests */,
 				19EA5A4323B7328C00C8DDD9 /* YiUITests */,
 				19EA5A2023B7328A00C8DDD9 /* Products */,
+				461A06A46420E7F5AD8CBDBC /* Pods */,
+				9F92B23C19A5B580D2F862CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +168,24 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		461A06A46420E7F5AD8CBDBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F466EC24805E2DB83CE03415 /* Pods-Yi.debug.xcconfig */,
+				2A3EE128E5559B254CB3535A /* Pods-Yi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F92B23C19A5B580D2F862CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2586C1001627CB7ADB0285A /* Pods_Yi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19EA5A4923B7328C00C8DDD9 /* Build configuration list for PBXNativeTarget "Yi" */;
 			buildPhases = (
+				0AA2A44187443E217DAB98EE /* [CP] Check Pods Manifest.lock */,
 				19EA5A1B23B7328A00C8DDD9 /* Sources */,
 				19EA5A1C23B7328A00C8DDD9 /* Frameworks */,
 				19EA5A1D23B7328A00C8DDD9 /* Resources */,
+				D1C4C5E3C861DA0392670ED1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +315,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AA2A44187443E217DAB98EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C4C5E3C861DA0392670ED1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yi/Pods-Yi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yi/Pods-Yi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yi/Pods-Yi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19EA5A1B23B7328A00C8DDD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -394,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -448,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -460,6 +529,7 @@
 		};
 		19EA5A4A23B7328C00C8DDD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F466EC24805E2DB83CE03415 /* Pods-Yi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +548,7 @@
 		};
 		19EA5A4B23B7328C00C8DDD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3EE128E5559B254CB3535A /* Pods-Yi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

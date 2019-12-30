@@ -1,0 +1,11 @@
+platform :ios, '13.0'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'Yi' do
+    pod 'SnapKit', '5.0.1'
+    pod 'IQKeyboardManagerSwift', '6.4.1'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+end
+
