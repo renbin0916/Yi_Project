@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		19EA5A2323B7328A00C8DDD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A2223B7328A00C8DDD9 /* AppDelegate.swift */; };
 		19EA5A2523B7328A00C8DDD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A2423B7328A00C8DDD9 /* SceneDelegate.swift */; };
-		19EA5A2723B7328A00C8DDD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A2623B7328A00C8DDD9 /* ViewController.swift */; };
-		19EA5A2A23B7328A00C8DDD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EA5A2823B7328A00C8DDD9 /* Main.storyboard */; };
 		19EA5A2C23B7328C00C8DDD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EA5A2B23B7328C00C8DDD9 /* Assets.xcassets */; };
 		19EA5A2F23B7328C00C8DDD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EA5A2D23B7328C00C8DDD9 /* LaunchScreen.storyboard */; };
 		19EA5A3A23B7328C00C8DDD9 /* YiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A3923B7328C00C8DDD9 /* YiTests.swift */; };
 		19EA5A4523B7328C00C8DDD9 /* YiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A4423B7328C00C8DDD9 /* YiUITests.swift */; };
+		19EA5A5623B7330500C8DDD9 /* ReadMainVC_Yi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A5423B7330500C8DDD9 /* ReadMainVC_Yi.swift */; };
+		19EA5A5723B7330500C8DDD9 /* ReadMainVC_Yi.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EA5A5523B7330500C8DDD9 /* ReadMainVC_Yi.xib */; };
+		19EA5A5B23B73AFA00C8DDD9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A5A23B73AFA00C8DDD9 /* String+Extension.swift */; };
+		19EA5A6023B7407600C8DDD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA5A5E23B7407600C8DDD9 /* HomeViewController.swift */; };
+		19EA5A6123B7407600C8DDD9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EA5A5F23B7407600C8DDD9 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,6 @@
 		19EA5A1F23B7328A00C8DDD9 /* Yi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EA5A2223B7328A00C8DDD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19EA5A2423B7328A00C8DDD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19EA5A2623B7328A00C8DDD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19EA5A2923B7328A00C8DDD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19EA5A2B23B7328C00C8DDD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19EA5A2E23B7328C00C8DDD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19EA5A3023B7328C00C8DDD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		19EA5A4023B7328C00C8DDD9 /* YiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EA5A4423B7328C00C8DDD9 /* YiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiUITests.swift; sourceTree = "<group>"; };
 		19EA5A4623B7328C00C8DDD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EA5A5423B7330500C8DDD9 /* ReadMainVC_Yi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMainVC_Yi.swift; sourceTree = "<group>"; };
+		19EA5A5523B7330500C8DDD9 /* ReadMainVC_Yi.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadMainVC_Yi.xib; sourceTree = "<group>"; };
+		19EA5A5A23B73AFA00C8DDD9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		19EA5A5E23B7407600C8DDD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		19EA5A5F23B7407600C8DDD9 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,15 @@
 		19EA5A2123B7328A00C8DDD9 /* Yi */ = {
 			isa = PBXGroup;
 			children = (
+				19EA5A5923B73AEA00C8DDD9 /* Extension */,
 				19EA5A2223B7328A00C8DDD9 /* AppDelegate.swift */,
 				19EA5A2423B7328A00C8DDD9 /* SceneDelegate.swift */,
-				19EA5A2623B7328A00C8DDD9 /* ViewController.swift */,
-				19EA5A2823B7328A00C8DDD9 /* Main.storyboard */,
+				19EA5A5E23B7407600C8DDD9 /* HomeViewController.swift */,
+				19EA5A5F23B7407600C8DDD9 /* HomeViewController.xib */,
 				19EA5A2B23B7328C00C8DDD9 /* Assets.xcassets */,
 				19EA5A2D23B7328C00C8DDD9 /* LaunchScreen.storyboard */,
 				19EA5A3023B7328C00C8DDD9 /* Info.plist */,
+				19EA5A5223B732CE00C8DDD9 /* Yi_Read */,
 			);
 			path = Yi;
 			sourceTree = "<group>";
@@ -126,6 +134,31 @@
 				19EA5A4623B7328C00C8DDD9 /* Info.plist */,
 			);
 			path = YiUITests;
+			sourceTree = "<group>";
+		};
+		19EA5A5223B732CE00C8DDD9 /* Yi_Read */ = {
+			isa = PBXGroup;
+			children = (
+				19EA5A5323B732D900C8DDD9 /* ViewController */,
+			);
+			path = Yi_Read;
+			sourceTree = "<group>";
+		};
+		19EA5A5323B732D900C8DDD9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				19EA5A5423B7330500C8DDD9 /* ReadMainVC_Yi.swift */,
+				19EA5A5523B7330500C8DDD9 /* ReadMainVC_Yi.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		19EA5A5923B73AEA00C8DDD9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19EA5A5A23B73AFA00C8DDD9 /* String+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19EA5A2F23B7328C00C8DDD9 /* LaunchScreen.storyboard in Resources */,
+				19EA5A5723B7330500C8DDD9 /* ReadMainVC_Yi.xib in Resources */,
 				19EA5A2C23B7328C00C8DDD9 /* Assets.xcassets in Resources */,
-				19EA5A2A23B7328A00C8DDD9 /* Main.storyboard in Resources */,
+				19EA5A6123B7407600C8DDD9 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19EA5A2723B7328A00C8DDD9 /* ViewController.swift in Sources */,
+				19EA5A6023B7407600C8DDD9 /* HomeViewController.swift in Sources */,
+				19EA5A5623B7330500C8DDD9 /* ReadMainVC_Yi.swift in Sources */,
 				19EA5A2323B7328A00C8DDD9 /* AppDelegate.swift in Sources */,
+				19EA5A5B23B73AFA00C8DDD9 /* String+Extension.swift in Sources */,
 				19EA5A2523B7328A00C8DDD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		19EA5A2823B7328A00C8DDD9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19EA5A2923B7328A00C8DDD9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		19EA5A2D23B7328C00C8DDD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = t.Yi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = t.Yi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
